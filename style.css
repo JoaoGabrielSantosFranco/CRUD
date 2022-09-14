@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgba(20, 20, 244, 0.08);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 12px;
+}
+
+.header span {
+  font-weight: 900;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+#cadastrarCliente {
+  background-color: rgb(57, 57, 226);
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+#tableClient {
+  padding: 10px;
+  width: auto;
+  height: inherit;
+  overflow: auto;
+}
+
+
+#tableClient::-webkit-scrollbar {
+  width: 12px;
+  background-color: whitesmoke;
+}
+
+#tableClient::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}
+
+#tableClient {
+  width: 100%;
+  border-spacing: 10px;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: whitesmoke;
+}
+
+tr {
+  border-bottom: 1px solid rgb(238, 235, 235) !important;
+}
+
+tbody tr td {
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+}
+
+thead tr th {
+  padding: 5px;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+tbody tr {
+  margin-bottom: 50px;
+}
+
+thead tr th.function {
+  width: 100px !important;
+  text-align: center;
+}
+
+tbody tr td.function {
+  text-align: center;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  
+}
+
+.modal-content label {
+  font-size: 13px;
+  width: 100%;
+}
+
+.modal-content input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.modal-content button {
+  margin: 10px auto;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(57, 57, 226);
+
+}
+
+.active {
+  display: flex;
+}
+
+
+
+td button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
